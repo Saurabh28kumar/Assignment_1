@@ -4,6 +4,7 @@ backend/__pycache__/
 
 # Database
 backend/users.db
+backend/instance/users.db
 
 # Environment variables
 .env
