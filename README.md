@@ -25,3 +25,19 @@ python app.py
 cd frontend
 npm install
 npm run dev
+
+
+# API Documentation
+
+Method ,  Endpoint   , Description 
+post   ,  /register  , register a new user
+post   ,  /login     , authenicate user and return  JWT 
+get    ,  /profile   , fetch user profile 
+
+# Database Schema
+User Table
+
+id – Integer (Primary Key)
+username – String
+password_hash – String
+aadhaar_encrypted – Text (AES encrypted)
