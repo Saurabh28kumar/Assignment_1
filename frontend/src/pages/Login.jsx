@@ -30,31 +30,43 @@ export default function Login() {
     }
   };
 
- return (
-  <div className="center">
-    <div className="card">
-      <h2>Login</h2>
+  return (
+    <div className="center">
+      {/* Wrapper keeps title & card aligned */}
+      <div style={{ textAlign: "center" }}>
+        <h1
+          style={{
+            color: "#ffffff",
+            marginBottom: "25px",
+            fontWeight: "600",
+          }}
+        >
+          Secure User Profile System
+        </h1>
 
-      <input
-        placeholder="Username"
-        onChange={(e) => setUsername(e.target.value)}
-      />
+        <div className="card">
+          <h2>Login</h2>
 
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={(e) => setPassword(e.target.value)}
-      />
+          <input
+            placeholder="Username"
+            onChange={(e) => setUsername(e.target.value)}
+          />
 
-      <button onClick={login}>Login</button>
+          <input
+            type="password"
+            placeholder="Password"
+            onChange={(e) => setPassword(e.target.value)}
+          />
 
-      {error && <p className="error">{error}</p>}
+          <button onClick={login}>Login</button>
 
-      <p style={{ textAlign: "center", marginTop: "15px" }}>
-        New user? <Link to="/register">Register here</Link>
-      </p>
+          {error && <p className="error">{error}</p>}
+
+          <p style={{ marginTop: "15px" }}>
+            New user? <Link to="/register">Register here</Link>
+          </p>
+        </div>
+      </div>
     </div>
-  </div>
-);
-
+  );
 }
