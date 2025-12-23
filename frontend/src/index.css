@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+/* Center layout */
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Card */
+.card {
+  background: #1e1e1e;
+  padding: 30px;
+  width: 380px;
+  border-radius: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Headings */
+.card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Inputs */
+.card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #2b2b2b;
+  color: #fff;
+  outline: none;
+}
+
+.card input::placeholder {
+  color: #aaa;
+}
+
+/* Buttons */
+.card button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 6px;
+  border: none;
+  background: #4caf50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card button:hover {
+  background: #43a047;
+}
+
+/* Links */
+.card a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Error */
+.error {
+  color: #ff4d4d;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Dashboard */
+.profile-box {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #444;
+}
