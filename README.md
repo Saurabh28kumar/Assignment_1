@@ -41,3 +41,21 @@ id – Integer (Primary Key)
 username – String
 password_hash – String
 aadhaar_encrypted – Text (AES encrypted)
+
+
+# AI-Assisted Tasks
+
+AI tools (ChatGPT) were used during development to:
+
+Design and implement the Flask backend with JWT authentication.
+Add password hashing and AES-based Aadhaar encryption/decryption.
+Create REST APIs for registration, login, and profile retrieval.
+Assist in building the React frontend (login, registration, dashboard).
+Debug backend–frontend integration issues and improve UI styling.
+
+# Effectiveness Score
+
+Score: 4 / 5
+
+Justification:
+AI tools helped speed up development and reduce boilerplate code, especially for backend security and frontend integration. Some debugging and UI refinements still required manual effort.
